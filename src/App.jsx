@@ -1,11 +1,18 @@
 import "./App.css";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
+import BrandLink from "./components/BrandLink";
 
 function App() {
   return (
-    <h1 className="text-3xl">
-      <Navbar />
-    </h1>
+    <div>
+      <Router>
+        <Navbar />
+        <Routes>
+          {/*<Route path="/home" element={<Navbar />} />*/}
+        </Routes>
+      </Router>
+    </div>
   );
 }
 

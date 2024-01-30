@@ -6,18 +6,17 @@ import CartIcon from "../Icons/CartIcon";
 import NavLinks from "../NavLinks";
 
 //import './Navbar.css';
+const BrandLinkStyle = "font-Workbench";
 
 const Navbar = () => {
   return (
-    //<BrandLink/>
-
-    <div>
-      <NavLinks />
+    <nav className="container mx-auto flex justify-between py-3">
+      <BrandLink classes={BrandLinkStyle} />
       <div className="flex">
         <HeartIcon />
         <CartIcon />
       </div>
-    </div>
+    </nav>
   );
 };
 
