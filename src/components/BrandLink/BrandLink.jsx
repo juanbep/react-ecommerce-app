@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const BrandLink = ({ classes }) => {
+const BrandLink = () => {
   return (
-    <div>
-      <Link className={`${classes}`} to="/">
-        Sci-Fi
+    <div className="flex flex-shrink-0 items-center">
+      <Link to="/home">
+        <img className="h-10 w-auto" src="/favicon_page.png" alt="SciFi-Logo" />
       </Link>
     </div>
   );
